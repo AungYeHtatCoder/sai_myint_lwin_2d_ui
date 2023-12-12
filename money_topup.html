@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShweBo 2D</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- bootstrap css1 js1-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      .nav-icons img {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .profile-image img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="main-body shadow">
+      <!-- navbar section start -->
+      <div
+        class="d-flex justify-content-between align-items-center fixed-top p-3 mx-auto navs"
+      >
+        <a href="wallet.html" class="text-decoration-none text-white d-block">
+          <i class="bi bi-arrow-left fs-3"></i>
+        </a>
+        <a href="index.html" class="text-decoration-none text-white d-block">
+          <h4 style="font-size: 24px">ShweBo 2D</h4>
+        </a>
+        <a
+          href="money_topup.html"
+          class="text-decoration-none text-white d-block"
+        >
+          <i class="bi bi-arrow-clockwise fs-5"></i>
+        </a>
+      </div>
+      <!-- navbar section end -->
+      <section
+        class="container-fluid"
+        style="margin-top: 60px; padding-top: 18px"
+      >
+        <div class="top-up-header text-center aling-item-center text-dark">
+          <h5 class="mt-3">ငွေဖြည့်မည်</h5>
+          <h6 class="mt-3">
+            ငွေဖြည့်မည် ကျေးဇူးပြု၍ အောက်ပါ KPay အကောင့်သို့ ငွေဖြည့်သွင်းပါ။
+          </h6>
+        </div>
+      </section>
+      <!-- Top Up Money -->
+      <section class="container-fluid mt-5 text-dark">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >ငွေလက်ခံမည့်ဖုန်းနံပါတ်</label
+          >
+          <input type="number" class="form-control shadow-sm" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >သင်၏ Kpay ဖုန်းနံပါတ်ထည့်ပါ</label
+          >
+          <input type="number" class="form-control shadow-sm" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >လုပ်ဆောင်မှုအမှတ်စဥ် (နောက်ဆုံးဂဏန်း ၆ လုံး)</label
+          >
+          <input type="number" class="form-control shadow-sm" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >ငွေဖြည့်ဖြည့်မည့် ပမာဏ</label
+          >
+          <input type="number" class="form-control shadow-sm" />
+        </div>
+      </section>
+      <section class="chose-money">
+        <div class="d-flex justify-content-around mt-2">
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck1"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck1">1000</label>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck2"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck2">20000</label>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck3"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck3">30000</label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around mt-2">
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck4"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck4">10000</label>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck5"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck5">20000</label>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck6"
+              autocomplete="off"
+            />
+            <label class="btn top-up-btn" for="btncheck6">50000</label>
+          </div>
+        </div>
+        <div class="container-fluid mt-3">
+          <input
+            type="submit"
+            class="form-control shadow-sm top-play"
+            value="ငွေဖြည့်မည်"
+          />
+        </div>
+        <div class="container-fluid text-center aling-item-center">
+          <div class="border border-1 rounded mt-3 p-2">
+            <h6 class="mt-3 text-dark">
+              ငွေဖြည့်ရန်အဆင်မပြေမှုတစ်စုံတစ်ရာရှိပါက ဆက်သွယ်ရန်
+            </h6>
+            <div class="icons mt-3">
+              <a href="#"><img src="images/telegram.png" class="p-1" /></a>
+              <a href="#"><img src="images/viber.png" class="p-1" /></a>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </section>
+      <!-- footer section start  -->
+      <footer class="fixed-bottom py-3 mx-auto border border-top border-1">
+        <div class="d-flex justify-content-around">
+          <a href="index.html" class="text-center">
+            <i class="bi bi-house-door"></i>
+            <div class="footer-text">ပင်မ</div>
+          </a>
+          <a href="Wallet.html" class="text-center">
+            <i class="bi bi-wallet2"></i>
+            <div class="footer-text">ပိုက်ဆံအိတ်</div>
+          </a>
+          <a href="promotion.html" class="text-center">
+            <i class="bi bi-gift"></i>
+            <div class="footer-text">ပရိုမိုရှင်း</div>
+          </a>
+          <a href="service.html" class="text-center">
+            <i class="bi bi-telephone"></i>
+            <div class="footer-text">ဝန်ဆောင်မှုဖုန်း</div>
+          </a>
+          <a href="profile.html" class="text-center">
+            <i class="bi bi-person"></i>
+            <div class="footer-text">ကျွန်ုပ်</div>
+          </a>
+        </div>
+      </footer>
+      <!-- footer section end -->
+    </div>
+    <!-- bootstrap css1 js1 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
